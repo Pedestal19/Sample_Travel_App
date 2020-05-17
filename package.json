@@ -1,0 +1,25 @@
+{
+  "name": "weather_app_sample",
+  "version": "1.0.0",
+  "description": "udacity sample weather project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pedestal19/Weather_App_Sample.git"
+  },
+  "author": "Hosanna Gabe-Oji <yourock00019@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pedestal19/Weather_App_Sample/issues"
+  },
+  "homepage": "https://github.com/Pedestal19/Weather_App_Sample#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0"
+  }
+}
