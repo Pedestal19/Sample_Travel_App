@@ -1,97 +1,43 @@
-main {
-  position: absolute;
-  top: 150px;
-  width: 100%;
-  min-height: 100%;
-  display: inline;
-  background-image: url(/Window2.jpg);
+
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css");
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+h3 span {
+  font-size: 16px;
+  font-style: italic !important;
+}
+
+h4 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+p {
+  font-size: 1.6rem;
+  margin: 0.5rem 0;
+  color: black;
+}
+
+// body {
+//   background-color: #8E78FD;
+//   min-height: 100vh;
+// }
+
+body {
+  background: url('https://source.unsplash.com/mSESwdMZr-A/1920x1080') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
-  padding: 100px;
-  padding-top: 40px;
+  -o-background-size: cover;
 }
 
-img {
-  max-width: 100%;
-  align-content: center;
-  max-height: fit-content;
-  display: block;
-  margin: 0 auto;
-  margin-left: 40px;
-  object-fit: cover;
-  padding-bottom: 10;
-  border-radius: 15px 15px 15px 15px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+main {
+  padding: 8rem;
 }
 
-#image {
-  padding-bottom: 60px;
-}
-.button {
-  background-color: rgb(59, 109, 76); /* Green */
-  border: solid 2.5px rgb(154, 209, 168);
-  color: rgb(255, 255, 255);
-  padding: 10px 32px;
-  margin: 20px;
-  margin-left: 0px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 25px;
-  border-radius: 15px 15px 15px 15px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.section2 {
-  position: relative;
-  top: 10px;
-  width: 90%;
-  min-height: 1500px;
-  font-family: Sans-Serif;
-  font-size: 35px;
-  color: rgb(245, 238, 202);
-  align-content: center;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 80);
-}
-
-div {
-  padding: 12px;
-}
-
-.text {
-  font-size: 30px;
-  font-family: Sans-Serif;
-  color: rgb(255, 255, 255);
-}
-#input1 {
-  font-size: 18px;
-  border-radius: 10px 10px 10px 10px;
-  border: none;
-  outline: none;
-}
-#input2 {
-  font-size: 18px;
-  border-radius: 10px 10px 10px 10px;
-}
-
-#input2.sub-menu li:hover a {
-  display: block;
-}
-
-#input3 {
-  font-size: 18px;
-  border-radius: 10px 10px 10px 10px;
-  border: none;
-  outline: none;
-}
-
-h1 {
-  color: rgb(255, 255, 255);
-  padding: 10px;
-  font-size: 58px;
-  font-family: Sans-Serif;
-  text-align: center;
-}
-
-a {
-  text-decoration: none;
-}

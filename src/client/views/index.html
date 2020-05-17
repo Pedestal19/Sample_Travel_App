@@ -1,62 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>NLP Demo</title>
-  </head>
-  <body>
-    
-    <main>
-      <div class="card bg-dark text-white">
-        <div class="card-body">NLP Demo using Aylien</div>
-      </div>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>The Travel Agency</title>
 
-      <hr />
-
-      <form class="form-group" onsubmit="return Client.handleCallAylienForNLP(event)">
-        <label for="test-url">
-          Enter Url for NLP Analysing by Aylien...
-        </label>
-        <input class="form-control input-lg" required id="test-url" type="url" placeholder="e.g https://punchng.com/grumbling-in-police-as-fg-fails-to-implement-salary-increase/" />
-        <br/><br/>
-        <input class="btn-lg btn-primary btn-block" type="submit" value="Submit" />
         
-      </form>
+    </head>
 
-      <section class="url-results">
-        <ul>
-          <div class="card bg-success text-white">
-          <li>
-            <h3>Text Polarity: <span id="polarity"></span></h3>
-            
-            <h3>Confidence: <span id="polarity_confidence"></span></h3>
+    <body>
 
-          </li>
+      <header>
+      <div class="card bg-dark text-white">
+        <div class="card-body">The Travel Agency</div>
+      </div>
+    </header>
+<br>
+        <main>
+            <section class ="section2">
+                    <p>Flying To: </p>
+                    <input id="input1" class="form-control input-lg"
+                           placeholder="Enter valid city/zipcode"
+                           type="text" required>
 
-          <li>
-            <h3>Text Subjectivity: <span id="subjectivity"></span></h3>
+                    <p>Departure: </p>
+                    <input id="input2" class="form-control input-lg"
+                           placeholder="dd/mm/yyyy"
+                           type="date" required>
 
-            <h3>Confidence: <span id="subjectivity_confidence"></span></h3>
+                    <p>Returning: </p>
+                    <input id="input3" class="form-control input-lg"
+                           placeholder="dd/mm/yyyy"
+                           type="date" required>
+                           <br>
 
-          </li>
-          </div>
+                    <button class = "btn-lg btn-primary btn-block" onClick = "Client.formHandler()" type="button" style=" outline: 0 none;">Submit</button> 
+                    <br/>
+                    <button id = "removeTripButton" class = "btn-lg btn-danger btn-block" type="button" style=" outline: 0 none;">Remove Trip</button>
+                    <br><br>
+                    <p><div id="latitude" style = 'color: rgb(255, 255, 255); display: none;'></div></p>
+                    <p><div id="longitude" style = 'color: rgb(228, 227, 166); display: none;'></div></p>
+                    <p >Country Code:<div id="country" style = 'color: rgb(255, 255, 255)'></div></p>
+                    <p style = "display: none;"><div id="placeName" style = "display: none;"></div></p>
+                    <p>Countdown:<div id="countdown" style = 'color: rgb(255, 255, 255)'></div></p>
+                    <p>Length of Trip:<div id="LoT" style = 'color: rgb(255, 255, 255)'></div></p>
+                    <p>Prospective Weather:<br><ul id="weather" style = 'color: rgb(255, 255, 255); line-height: 50px; text-align: justify'></ul></p><br>
+                    <p style = "display: none;"><div id="image" class = "picz"></div></pstyle = "display: none;">
+            </section>
+            <br>
 
-          <li>
-            <br/><br/>
-            <h3>Text Details:</h3>
-            <hr/>
-            <p id="textDetails"></p>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <script>
-        if ("serviceWorker" in navigator) {
-        window.addEventListener("load", () =>
-          navigator.serviceWorker.register("/service-worker.js")
-        );
-      }
-    </script>
-    
-  </body>
+           
+
+            <footer>
+                <div class = "box">
+                  
+                </div>
+              </footer>
+
+        </main>
+
+        <script>
+           
+        </script>
+
+    </body>
 </html>
+
