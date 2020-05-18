@@ -20,12 +20,12 @@
                            type="text" required>
 
                     <p>Departure: </p>
-                    <input id="input2" class="form-control input-lg"
+                    <input id="departure" class="form-control input-lg"
                            placeholder="dd/mm/yyyy"
                            type="date" required>
 
                     <p>Returning: </p>
-                    <input id="input3" class="form-control input-lg"
+                    <input id="returning" class="form-control input-lg"
                            placeholder="dd/mm/yyyy"
                            type="date" required>
                            <br>
@@ -53,9 +53,13 @@
           
         </main>
 
-        <script>
-           
-        </script>
+      <script>
+          if ("serviceWorker" in navigator) {
+          window.addEventListener("load", () =>
+            navigator.serviceWorker.register("/service-worker.js")
+          );
+        }
+      </script>
 
     </body>
 </html>

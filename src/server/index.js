@@ -106,6 +106,9 @@ app.get(pixaBayAPIRoute, (req, res) => {
 
 });
 
+app.get("/", (req, res) => res.sendFile("index.html"));
+
+
 
 // travel agency app is listening on this port
 app.listen(appRunningOnPort, () => {

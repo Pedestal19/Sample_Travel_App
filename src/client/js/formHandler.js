@@ -1,4 +1,6 @@
-const _fetchGeoNames = async (zip = '11230') => {
+
+
+const _fetchGeoNames = async (zip = '07101') => {
   const url = `http://localhost:8081/geoNames?zip=${zip}`;
   return await fetch(url).then(response => response.json());
 };
@@ -15,8 +17,8 @@ const handleGeonames = async () => {
 };
 
 const handleCountdown = () => {
-  const startDate = new Date(document.getElementById('input2').value);
-  const endDate = new Date(document.getElementById('input3').value);
+  const startDate = new Date(document.getElementById('departure').value);
+  const endDate = new Date(document.getElementById('returning').value);
 
   const time = new Date();
   const countdown = Math.ceil(startDate - time);
@@ -33,7 +35,7 @@ const dateDifference = (startDate, endDate) => {
 };
 
 const _fetchDarkSky = async (lat, long, time) => {
-  const url2 = `http://localhost:8081/darkSky?latitude=${lat}&longitude=${long}&time=${time}`;
+  const url2 = `http://localhost:7779/darkSky?latitude=${lat}&longitude=${long}&time=${time}`;
   return await fetch(url2).then(response => {
     return response.json();
   });
@@ -59,7 +61,7 @@ const handleDarkSky = (time, daySinceStart) => {
 
 //Pixabay API fetch request
 const _fetchPixabay = async image => {
-  const url3 = `http://localhost:8081/pixabay?image=${image}`;
+  const url3 = `http://localhost:7779/pixabay?image=${image}`;
   return await fetch(url3).then(response => {
     return response.json();
   });
@@ -79,8 +81,8 @@ const formHandler = event => {
   handleCountdown();
 
   handleGeonames().then(response => {
-    const startDate = new Date(document.getElementById('input2').value);
-    const endDate = new Date(document.getElementById('input3').value);
+    const startDate = new Date(document.getElementById('departure').value);
+    const endDate = new Date(document.getElementById('returning').value);
     const countdownInDays = dateDifference(startDate, endDate) / 8.64e7;
 
     let currentDate = new Date(startDate);

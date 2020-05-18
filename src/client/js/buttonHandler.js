@@ -1,17 +1,23 @@
-function buttonHandler(event) {
-  document.getElementById('country').textContent = '';
-  document.getElementById('placeName').textContent = '';
-  document.getElementById('LoT').textContent = '';
-  document.getElementById('countdown').textContent = '';
+const countryText = document.getElementById('country');
+const empty = '';
+const placeNameText = document.getElementById('placeName');
+const lotText = document.getElementById('LoT');
+const countdownText = document.getElementById('countdown');
+const weatherSectionDiv = document.getElementById('weather');
+const imageSectionDiv = document.getElementById('image');
 
-  const weatherDiv = document.getElementById('weather');
-  while (weatherDiv.firstChild) {
-    weatherDiv.removeChild(weatherDiv.firstChild);
+function buttonHandler(event) {
+  countryText.textContent = empty;
+  placeNameText.textContent = empty;
+  lotText.textContent = empty;
+  countdownText.textContent = empty;
+
+  while (weatherSectionDiv.firstChild) {
+    weatherSectionDiv.removeChild(weatherSectionDiv.firstChild);
   }
 
-  const imageDiv = document.getElementById('image');
-  if (imageDiv.firstChild) {
-    imageDiv.removeChild(imageDiv.firstChild);
+  if (imageSectionDiv.firstChild) {
+    imageSectionDiv.removeChild(imageSectionDiv.firstChild);
   }
 }
 
