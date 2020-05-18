@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Pedestal19/Weather_App_Sample.git"
+    "url": "git+https://github.com/Pedestal19/Sample_Travel_App"
   },
   "author": "Hosanna Gabe-Oji <yourock00019@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Pedestal19/Weather_App_Sample/issues"
+    "url": "https://github.com/Pedestal19/Sample_Travel_App/issues"
   },
-  "homepage": "https://github.com/Pedestal19/Weather_App_Sample#readme",
+  "homepage": "https://github.com/Pedestal19/Sample_Travel_App#readme",
   "dependencies": {
     "axios": "^0.19.0",
     "aylien_textapi": "^0.7.0",
